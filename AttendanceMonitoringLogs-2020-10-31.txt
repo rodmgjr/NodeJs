@@ -1,0 +1,76 @@
+10/31/2020-12:33:41 AM : GET /events/
+{"eventName":"Angular","eventType":"training","startDateTime":"2020-10-23T03:00:01.000+00:00","endDateTime":"2020-10-24T03:00:00.000+00:00"}
+
+10/31/2020-12:33:41 AM : GET /members/
+
+10/31/2020-12:33:41 AM : POST /members/
+{"name":"rodrigo","status":"active"}
+
+10/31/2020-12:33:41 AM : POST /members/
+{"name":"rodrigo","status":"active"}
+
+10/31/2020-12:33:41 AM : GET /members/
+
+10/31/2020-12:33:41 AM : GET /members/5f9c42aece972f4834f57f98
+
+10/31/2020-12:33:41 AM : PUT /member/5f9c42aece972f4834f57f98
+{"name":"Gonzales","status":"Active"}
+
+10/31/2020-12:33:41 AM : PUT /members/5f9c42aece972f4834f57f98
+{"name":"Gonzales","status":"Active"}
+
+10/31/2020-12:33:41 AM : GET /members/
+
+10/31/2020-12:33:41 AM : GET /members/search?name=Gonzales&status=Active
+
+10/31/2020-12:33:41 AM : GET /events/
+
+10/31/2020-12:33:41 AM : POST /events/
+{"eventName":"NodeJs","eventType":"Masters","startDateTime":"2020-10-30T16:52:09.645Z","endDateTime":"2020-10-31T16:52:09.645Z"}
+
+10/31/2020-12:33:41 AM : GET /events/
+
+10/31/2020-12:33:41 AM : GET /events/5f9c451cce972f4834f57f99
+
+10/31/2020-12:33:41 AM : PUT /events/5f9c451cce972f4834f57f99
+{"eventName":"NodeJs","eventType":"Masters","startDateTime":"2020-10-30T16:52:09.645Z","endDateTime":"2020-11-01T16:52:09.645Z"}
+
+10/31/2020-12:33:41 AM : GET /events/
+
+10/31/2020-12:33:41 AM : GET /events/exports=5f9c451cce972f4834f57f99
+
+10/31/2020-12:33:41 AM : GET /events/
+
+10/31/2020-12:58:38 AM : GET /events/
+
+10/31/2020-12:58:38 AM : GET /events/exports=5f9c451cce972f4834f57f99
+
+10/31/2020-12:58:38 AM : GET /events/export=5f9c451cce972f4834f57f99
+
+10/31/2020-12:58:38 AM : GET /events/export=5f9c451cce972f4834f57f99
+
+10/31/2020-1:01:11 AM : GET /events/
+
+10/31/2020-1:01:11 AM : GET /members/
+
+10/31/2020-1:01:11 AM : GET /events/export=5f9c451cce972f4834f57f99
+
+10/31/2020-1:01:11 AM : POST /attendance/
+{"memberId":"5f9c42aece972f4834f57f98","eventId":"5f9c451cce972f4834f57f99","timeId":"2020-10-30T16:52:09.645Z","timeOut":"2020-11-01T16:52:09.645Z"}
+
+10/31/2020-1:01:11 AM : POST /attendance/
+{"memberId":"5f9c42aece972f4834f57f98","eventId":"5f9c451cce972f4834f57f99","timeIn":"2020-10-30T16:52:09.645Z","timeOut":"2020-11-01T16:52:09.645Z"}
+
+10/31/2020-1:01:11 AM : GET /attendance/
+
+10/31/2020-1:01:11 AM : PUT /attendance/5f9c476db5c8fa1c14e76c54
+{"memberId":"5f9c42aece972f4834f57f98","eventId":"5f9c451cce972f4834f57f99","timeIn":"2020-10-30T16:52:09.645Z","timeOut":"2020-10-31T16:52:09.645Z"}
+
+10/31/2020-1:01:11 AM : GET /events/export?eventId=5f9c451cce972f4834f57f99
+
+10/31/2020-1:01:11 AM : GET /events/export?eventId=5f9c451cce972f4834f57f99
+
+10/31/2020-1:32:54 AM : GET /members/
+
+10/31/2020-1:32:54 AM : GET /events/
+

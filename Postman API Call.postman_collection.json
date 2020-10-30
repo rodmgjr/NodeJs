@@ -1,0 +1,407 @@
+{
+	"info": {
+		"_postman_id": "f4f30a8f-65e3-4b04-bd99-31fae51d9ad7",
+		"name": "Postman API Call",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Member",
+			"item": [
+				{
+					"name": "Get All Members",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/members/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"members",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Member By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/members/5f9c42aece972f4834f57f98",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"members",
+								"5f9c42aece972f4834f57f98"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Member",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"rodrigo\",\r\n    \"status\": \"active\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/members/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"members",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Member By Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Gonzales\",\r\n    \"status\": \"Active\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/members/5f9c42aece972f4834f57f98",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"members",
+								"5f9c42aece972f4834f57f98"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Member By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/members/5f9c42aece972f4834f57f98",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"members",
+								"5f9c42aece972f4834f57f98"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Member By Name and Status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/members/search?name=Gonzales&status=Active",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"members",
+								"search"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Gonzales"
+								},
+								{
+									"key": "status",
+									"value": "Active"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Event",
+			"item": [
+				{
+					"name": "Get All Events",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/events/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"events",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Event By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/events/5f9c451cce972f4834f57f99",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"events",
+								"5f9c451cce972f4834f57f99"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Event",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"eventName\": \"NodeJs\",\r\n    \"eventType\": \"Masters\",\r\n    \"startDateTime\": \"2020-10-30T16:52:09.645Z\",\r\n    \"endDateTime\": \"2020-10-31T16:52:09.645Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/events/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"events",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Event By Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"eventName\": \"NodeJs\",\r\n    \"eventType\": \"Masters\",\r\n    \"startDateTime\": \"2020-10-30T16:52:09.645Z\",\r\n    \"endDateTime\": \"2020-11-01T16:52:09.645Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/events/5f9c451cce972f4834f57f99",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"events",
+								"5f9c451cce972f4834f57f99"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Event By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/events/5f9c451cce972f4834f57f99",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"events",
+								"5f9c451cce972f4834f57f99"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Export Event By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/events/export?eventId=5f9c451cce972f4834f57f99",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"events",
+								"export"
+							],
+							"query": [
+								{
+									"key": "eventId",
+									"value": "5f9c451cce972f4834f57f99"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Attendance",
+			"item": [
+				{
+					"name": "Save Attendance",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"memberId\":\"5f9c42aece972f4834f57f98\",\r\n    \"eventId\":\"5f9c451cce972f4834f57f99\",\r\n    \"timeIn\":\"2020-10-30T16:52:09.645Z\",\r\n    \"timeOut\":\"2020-11-01T16:52:09.645Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/attendance/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"attendance",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Attendance By Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"memberId\":\"5f9c42aece972f4834f57f98\",\r\n    \"eventId\":\"5f9c451cce972f4834f57f99\",\r\n    \"timeIn\":\"2020-10-30T16:52:09.645Z\",\r\n    \"timeOut\":\"2020-10-31T16:52:09.645Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/attendance/5f9c476db5c8fa1c14e76c54",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"attendance",
+								"5f9c476db5c8fa1c14e76c54"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Attendance By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/attendance/5f9c476db5c8fa1c14e76c54",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"attendance",
+								"5f9c476db5c8fa1c14e76c54"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
